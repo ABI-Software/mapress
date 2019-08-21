@@ -1,0 +1,18 @@
+{
+  "name": "mapress",
+  "version": "0.1.0",
+  "description": "Cypress test for mapcore",
+  "main": "index.js",
+  "scripts": {
+    "test-ci": "cypress run"
+  },
+  "keywords": [
+    "mapcore",
+    "testing"
+  ],
+  "author": "Alan Wu",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  }
+}
