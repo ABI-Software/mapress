@@ -4,6 +4,7 @@
   "description": "Cypress test for mapcore",
   "main": "index.js",
   "scripts": {
+    "wait": "wait-on -t 60000 http://localhost:5000",
     "test-ci": "cypress run"
   },
   "keywords": [
@@ -14,5 +15,8 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cypress": "^3.4.1"
+  },
+  "dependencies": {
+    "wait-on": "^3.3.0"
   }
 }
