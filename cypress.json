@@ -1,3 +1,8 @@
 {
-    "baseUrl": "http://localhost:5000/map"
+    "baseUrl": "http://localhost:5000/map",
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/cypress-report.xml",
+      "toConsole": true
+    }
 }
