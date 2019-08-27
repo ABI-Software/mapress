@@ -23,3 +23,8 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+//This error is emitted from mapbox and only occurs when running the test on Electron 61
+//Cypress.on("Error: can't serialize object of unregistered class", (err, runnable) => {
+//    return false;
+//})
