@@ -65,7 +65,7 @@ describe('Default visit', function() {
 
         cy.route('GET', '/map/biolucida/**').as('biolucida');
 
-        cy.get("#mapcore_search_results_container").get(".search-result").get("#mapcore_search_result_scaffold_map").parent().click();
+        cy.get("#mapcore_search_results_container").get(".search-result").get("#mapcore_search_result_data_viewer_map").parent().click();
 
         cy.wait('@biolucida');
 
@@ -81,7 +81,7 @@ describe('Default visit', function() {
 
         cy.wait('@scaffold');
 
-        cy.get(".maptab-tab-content").should('have.length', 2).get("#organsDisplayArea");
+        cy.get(".maptab-tab-content").should('have.length', 3).get("#organsDisplayArea");
 
     });
 })
