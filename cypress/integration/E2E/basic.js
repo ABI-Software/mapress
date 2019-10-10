@@ -9,8 +9,6 @@ describe('Default visit', function() {
 
         cy.visit('/');
 
-        cy.wait(['@biolucida']);
-
         cy.get("#mapcore_search_results_container").find(".search-result").should('have.length', 5);
 
         cy.wait(1000);
