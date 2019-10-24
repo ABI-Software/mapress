@@ -1,5 +1,34 @@
 describe('Default visit', function() {
+    it('Has Tutorial', function(){
+        cy.server();
+
+        cy.route('GET', '/flatmaps/flatmap/human/mvtiles/**').as('somebugs');
+
+        cy.visit('/');
+
+        cy.get(".chariot-tooltip.chariot-step-1").should('be.visible');
+
+        cy.get(".btn.btn-inverse.right").click()
+
+        cy.wait(100)
+
+        cy.get(".btn.btn-inverse.right").click()
+
+        cy.wait(100)
+
+        cy.get(".btn.btn-inverse.right").click()
+
+        cy.wait(100)
+
+        cy.get("#mapcore_search_results_container").find(".search-result").should('have.length', 5);
+
+
+    })
+
+
     it('MAPcore page', function() {
+
+        localStorage.setItem('hasVisitedMaps', true)
 
         cy.server();
 

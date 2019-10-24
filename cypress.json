@@ -4,5 +4,7 @@
     "reporterOptions": {
       "mochaFile": "results/cypress-report.xml",
       "toConsole": true
-    }
+    },
+    "viewportWidth": 1440,
+    "viewportHeight": 900
 }
