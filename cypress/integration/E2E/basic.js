@@ -8,17 +8,19 @@ describe('Default visit', function() {
 
         cy.get(".chariot-tooltip.chariot-step-1").should('be.visible');
 
-        cy.get(".btn.btn-inverse.right").click()
-
-        cy.wait(100)
+        cy.wait(500)
 
         cy.get(".btn.btn-inverse.right").click()
 
-        cy.wait(100)
+        cy.wait(500)
 
         cy.get(".btn.btn-inverse.right").click()
 
-        cy.wait(100)
+        cy.wait(500)
+
+        cy.get(".btn.btn-inverse.right").click()
+
+        cy.wait(500)
 
         cy.get("#mapcore_search_results_container").find(".search-result").should('have.length', 5);
 
